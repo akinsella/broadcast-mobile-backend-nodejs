@@ -1,0 +1,18 @@
+# NodeJS
+.DS_Store
+.#*
+*.swp
+bin
+
+target
+release.properties
+
+*~
+.idea
+package-dev.json
+node_modules
+tags
+
+#Redis
+dump.rdb
+
