@@ -1,16 +1,14 @@
----
-applications:
-  .:
-    name: xebia-mobile
-    framework:
-      name: node
-      info:
-        mem: 64M
-        description: Node.js Application
-        exec: 
-    url: ${name}.${target-base}
-    mem: 64M
-    instances: 1
-    services:
-      xebia-mobile-redis:
-        type: redis
+--- 
+applications: 
+- name: broadcast-mobile-backend
+  framework: node
+  runtime: node06
+  memory: 128M
+  instances: 1
+  url: broadcast-mobile-backend.${target-base}
+  path: .
+  services: 
+    broadcast-mobile-backend-redis: 
+      vendor: redis
+      version: "2.6"
+      tier: free
