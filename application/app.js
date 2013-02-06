@@ -40,8 +40,8 @@ app.configure('production', function () {
 
 staticRoutes(app);
 echonestRoutes(app);
-githubRoutes(app);
-twitterRoutes(app);
+//githubRoutes(app);
+//twitterRoutes(app);
 
 
 process.on('SIGTERM', function () {
